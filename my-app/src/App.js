@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './Components/Navbar';
+import Components2 from './Components/Components2';
 
 function App() {
  return (
@@ -22,6 +23,7 @@ function App() {
     </div>*/
 <>
 <Navbar title="Chandigarh University" abouttxt="About CU"/>
+<Components2/>
 </>  
   );
 }
