@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 
 export default function Component2() {
-  const {text,setText} = useState("");
+  const [text, setText] = useState("hello guys the text will be converted on clicking !");
   const handleOnClick =()=>{
     //console.log("you clicked on the button");
     let newTxt = text.toUpperCase();
@@ -14,8 +14,8 @@ export default function Component2() {
   }
   return (
     <div>
-      <textarea className="form-control1" id="txtbox" rows="10" onChange={handleOnChange} value={text}></textarea><br></br>
-      <button className="btn btn-primary" onClick={handleOnClick}>Hello</button>
+      <textarea className="form-control1" id="txtbox" rows="10" value={text} onChange={handleOnChange} ></textarea><br></br>
+      <button className="btn btn-primary" onClick={handleOnClick}>Convert</button>
     </div>
   )
 }
