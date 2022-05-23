@@ -22,7 +22,7 @@ function App() {
       </header>
     </div>*/
 <>
-<Navbar title="Chandigarh University" abouttxt="About CU"/>
+<Navbar title="Chitkara University" abouttxt="About CU"/>
 <Components2/>
 </>  
   );
