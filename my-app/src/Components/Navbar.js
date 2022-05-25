@@ -1,6 +1,9 @@
 import React from 'react'
 
 export default function Navbar(props) {
+  let myStyles={
+    color:'lightgray'
+  }
   return (
     <>
 <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
@@ -31,7 +34,7 @@ export default function Navbar(props) {
       </ul>
       <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={props.toggleMode} />
-  <label className="nav-item" class="form-check-label" onClick={props.toggleMode} for="flexSwitchCheckDefault" >Enable Dark Mode</label>
+  <label className="nav-item" class="form-check-label" for="flexSwitchCheckDefault" style={myStyles}>Enable Dark Mode</label>
 </div>
     </div>
   </div>

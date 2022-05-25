@@ -33,7 +33,7 @@ function App() {
       </header>
     </div>*/
 <>
-<Navbar title="Chitkara University" abouttxt="About CU" mode={mode} toggleMode={toggleMode}/>
+<Navbar title="Chitkara University" abouttxt="About CU" mode={mode} toggleMode={toggleMode} />
 <Components2/>
 </>  
   );
