@@ -43,14 +43,14 @@ export default function Component2() {
   //}
   const[myStyle, setMyStyle]=useState({
     color:'white',
-    backgroundColor:'darkblue'
+    backgroundColor:'black'
   })
   //const[myStyle, setMyStyle]=useState('initialState')
   const toggleStyle=()=>{
     if(myStyle.color=='white'){
       setMyStyle({
         color:'black',
-        backgroundColor:'skyblue'
+        backgroundColor:'white'
       })
     }
   }

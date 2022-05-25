@@ -2,8 +2,19 @@
 import './App.css';
 import Navbar from './Components/Navbar';
 import Components2 from './Components/Components2';
+import { useState } from 'react';
 
 function App() {
+  const [mode, setMode]=useState('light')
+
+  const toggleMode=()=>{
+    if(mode ==='light'){
+      setMode('dark')
+    }
+    else{
+      setMode('light')
+    }
+  }
  return (
     /*<div className="App">
       <header className="App-header">
@@ -22,7 +33,7 @@ function App() {
       </header>
     </div>*/
 <>
-<Navbar title="Chitkara University" abouttxt="About CU"/>
+<Navbar title="Chitkara University" abouttxt="About CU" mode={mode} toggleMode={toggleMode}/>
 <Components2/>
 </>  
   );
