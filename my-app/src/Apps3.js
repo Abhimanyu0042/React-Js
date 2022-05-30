@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 
+
 export default class Apps3 extends Component {
   constructor() {
-      super(); //
+      super(); 
       this.state = {
           student: [
               { name: 'Vikas', marks: 5},
