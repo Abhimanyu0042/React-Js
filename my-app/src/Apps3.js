@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import Students from './Components/Students';
 
 export default class Apps3 extends Component {
   constructor() {
